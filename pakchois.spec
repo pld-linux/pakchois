@@ -2,7 +2,7 @@ Summary:	PaKChoiS - PKCS#11 wrapper library
 Summary(pl.UTF-8):	PaKChoiS - biblioteka obudowująca PKCS#11
 Name:		pakchois
 Version:	0.4
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.manyfish.co.uk/pakchois/%{name}-%{version}.tar.gz
@@ -27,8 +27,8 @@ PaKChoiS to jeszcze jedna biblioteka obudowująca PKCS#11. Ma na celu
 jest dostarczenie lekkiego obudowania interfejsu PKCS#11:
 
 - oferującego współczesny, zorientowany obiektowo interfejs w C
-- nie ukrywającego szczegółów interfejsu PKCS#11 poza miejscami,
-  gdzie jest to konieczne
+- nie ukrywającego szczegółów interfejsu PKCS#11 poza miejscami, gdzie
+  jest to konieczne
 - obsługującego szczegóły wczytywania DSO
 - pozwalającego wywołującemu pominąć szczegóły dotyczące
   umiejscowienia czy nazw modułów PKCS#11 w systemie
@@ -72,6 +72,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libpakchois.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -87,7 +89,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libpakchois.so
-%{_libdir}/libpakchois.la
 %{_includedir}/pakchois
 %{_pkgconfigdir}/pakchois.pc
 
