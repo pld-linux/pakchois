@@ -24,15 +24,15 @@ thin wrapper over the PKCS#11 interface. The goals are:
 
 %description -l pl.UTF-8
 PaKChoiS to jeszcze jedna biblioteka obudowująca PKCS#11. Ma na celu
-jest dostarczenie lekkiego obudowania interfejsu PKCS#11:
+dostarczenie lekkiego obudowania interfejsu PKCS#11:
 
 - oferującego współczesny, zorientowany obiektowo interfejs w C
 - nie ukrywającego szczegółów interfejsu PKCS#11 poza miejscami, gdzie
   jest to konieczne
 - obsługującego szczegóły wczytywania DSO
 - pozwalającego wywołującemu pominąć szczegóły dotyczące
-  umiejscowienia czy nazw modułów PKCS#11 w systemie
-- zapobiegającego zależności od konkretnej biblioteki
+  umiejscowienia i nazw modułów PKCS#11 w systemie
+- zapobiegającego zależnościom od konkretnej biblioteki
   kryptograficznej.
 
 %package devel
