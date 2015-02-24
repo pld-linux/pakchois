@@ -2,7 +2,7 @@ Summary:	PaKChoiS - PKCS#11 wrapper library
 Summary(pl.UTF-8):	PaKChoiS - biblioteka obudowująca PKCS#11
 Name:		pakchois
 Version:	0.4
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.manyfish.co.uk/pakchois/%{name}-%{version}.tar.gz
