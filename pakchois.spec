@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	http://www.manyfish.co.uk/pakchois/%{name}-%{version}.tar.gz
 # Source0-md5:	218ad0256e514989299acdf4e86aaf3d
 URL:		http://www.manyfish.co.uk/pakchois/
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
